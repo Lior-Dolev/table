@@ -1,0 +1,67 @@
+{
+  "name": "table",
+  "version": "1.0.0",
+  "description": "Source code for my website",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "start": "npm run storybook",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx ./",
+    "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx ./ --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:fix && git add ."
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lior-Dolev/liordolev.git"
+  },
+  "author": "Lior Dolev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lior-Dolev/liordolev/issues"
+  },
+  "homepage": "https://github.com/Lior-Dolev/liordolev#readme",
+  "devDependencies": {
+    "@storybook/react": "^5.3.17",
+    "@types/classnames": "^2.2.10",
+    "@types/faker": "^4.1.12",
+    "@types/lodash": "^4.14.158",
+    "@types/react-virtualized": "^9.21.10",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^1.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-typescript": "^7.2.1",
+    "eslint-config-airbnb-typescript-prettier": "^2.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "faker": "^4.1.0",
+    "husky": "^4.2.5",
+    "less": "^3.11.1",
+    "less-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "prettier": "^2.0.5",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "classnames": "^2.2.6",
+    "dom-helpers": "^5.2.0",
+    "lodash": "^4.17.19",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-draggable": "^4.4.3",
+    "react-virtualized": "^9.21.2",
+    "uuid": "^8.3.0"
+  }
+}
