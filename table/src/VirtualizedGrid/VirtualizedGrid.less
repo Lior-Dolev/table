@@ -1,0 +1,62 @@
+@import '../index.less';
+
+.selected.ReactVirtualized__Table__row {
+  background-color: @selectedRow;
+}
+
+.cell.container {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cell.selected {
+  background-color: @selectedRow;
+}
+
+.grid.header {
+  overflow: hidden !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.cell.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon.drag {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 16px;
+  -ms-flex: 0 0 16px;
+  flex: 0 0 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.drag-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 16px;
+  z-index: 2;
+  cursor: col-resize;
+  color: rgba(0, 0, 0, 0.2);
+}
