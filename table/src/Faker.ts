@@ -25,14 +25,15 @@ type RowFields = {
   color: string;
 };
 
-type Row = RowFields & {
+export type Row = RowFields & {
   id: string;
 };
 
-type Column = {
+export type Column = {
   dataKey: string;
   label: string;
   editable?: boolean;
+  defaultWidth: number;
 };
 
 export class TableDataFaker {
@@ -110,6 +111,7 @@ export class TableDataFaker {
         dataKey: objectFieldNames[i],
         label: _.startCase(objectFieldNames[i]),
         editable: i == 1,
+        defaultWidth: 200,
       });
     }
   };

@@ -207,6 +207,9 @@ const VirtualizedGrid = ({
                   rowCount={1}
                   scrollLeft={scrollLeft}
                   width={width - scrollbarSize()}
+                  overscanColumnCount={
+                    selection === 'single' ? columns.length : columns.length + 1
+                  }
                 />
                 <Grid
                   cellRenderer={cellRenderer}
@@ -221,6 +224,9 @@ const VirtualizedGrid = ({
                   rowCount={sortedList.length}
                   rowHeight={30}
                   width={width}
+                  overscanColumnCount={
+                    selection === 'single' ? columns.length : columns.length + 1
+                  }
                 />
               </div>
             )}

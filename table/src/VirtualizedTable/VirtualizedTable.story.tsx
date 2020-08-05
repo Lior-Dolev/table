@@ -6,7 +6,7 @@ import VirtualizedTable from './index';
 storiesOf('react-virtualized', module).add('Table', () => (
   <div style={{ margin: 10, maxHeight: '100%', height: '100%' }}>
     <h1>react-virtualized Table</h1>
-    <Requirements missingRequirements={[5, 6]} />
+    <Requirements missingRequirements={[5, 7]} pluginRequirements={[2, 3, 7]} />
     <br />
     <hr />
     <p>
