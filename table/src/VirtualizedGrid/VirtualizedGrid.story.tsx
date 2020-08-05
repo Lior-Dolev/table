@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import Requirements from '../Requirements';
-import { VirtualizedGrid } from './index';
+import VirtualizedGrid from './index';
 
 storiesOf('react-virtualized', module).add('Grid', () => (
   <div style={{ margin: 10, maxHeight: '100%', height: '100%' }}>

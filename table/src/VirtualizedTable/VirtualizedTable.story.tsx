@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import Requirements from '../Requirements';
-import { VirtualizedTable } from './index';
+import VirtualizedTable from './index';
 
 storiesOf('react-virtualized', module).add('Table', () => (
   <div style={{ margin: 10, maxHeight: '100%', height: '100%' }}>
