@@ -163,19 +163,6 @@ const VirtualizedMultiGrid = ({
 
     return <DisplayCell {...props} />;
   };
-  // <div
-  //   onClick={() => _onCellClick(columnIndex, rowIndex)}
-  //   onBlur={() => setEditingCellPosition(null)}
-  //   style={style}
-  //   className={classnames('cell container', {
-  //     selected: selectedIds.includes(sortedList[rowIndex].id),
-  //   })}
-  // >
-  //   <span className={'cell text'}>
-  //     {sortedList[rowIndex][columns[columnIndex].dataKey]}
-  //   </span>
-  // </div>
-  // );
 
   const _cellRenderer = (props: GridCellProps) => {
     const isHeader = props.rowIndex === 0;
