@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import Requirements from '../Requirements';
 import MultiGrid from './index';
 
-storiesOf('react-virtualized', module).add('Multi Grid', () => (
+storiesOf('1. react-virtualized', module).add('3. Multi Grid', () => (
   <div style={{ margin: 10, maxHeight: '100%', height: '100%' }}>
     <h1>react-virtualized MultiGrid</h1>
     <Requirements missingRequirements={[5]} pluginRequirements={[1, 2, 3]} />

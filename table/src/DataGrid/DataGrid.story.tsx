@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import Requirements from '../Requirements';
 import DataGrid from './index';
 
-storiesOf('react-data-grid', module).add('Grid', () => (
+storiesOf('4. react-data-grid', module).add('Grid', () => (
   <div style={{ margin: 10, maxHeight: '100%', height: '100%' }}>
     <h1>react-data-grid</h1>
     <Requirements missingRequirements={[]} pluginRequirements={[2]} />
