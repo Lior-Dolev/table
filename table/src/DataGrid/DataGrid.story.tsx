@@ -18,8 +18,8 @@ storiesOf('4. react-data-grid', module).add('Grid', () => (
       license={'MIT'}
       stars={'4.1k'}
       forks={'1.8k'}
-      usedBy={'3,100+'}
-      contributors={'100+'}
+      usedBy={'3,127'}
+      contributors={'102'}
     />
     <a target={'_blank'} href={'https://www.npmjs.com/package/react-data-grid'}>
       npm
